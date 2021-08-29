@@ -1,0 +1,18 @@
+.cardContainer {
+	padding: 1em;
+	margin: 1em 0;
+	border-radius: 4px;
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+	transition: 0.3s ease;
+}
+
+.cardContainer:hover {
+	cursor: pointer;
+	transform: scale(1.02);
+}
+
+.flexWrapper {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+}
