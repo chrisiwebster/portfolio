@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "./layout.module.css";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
 import {
@@ -12,12 +13,44 @@ import {
 const name = "Chrisi Webster";
 
 export default function Layout({ children, home }) {
+	const [currentPage, setCurrentPage] = useState("home");
+
+	const checkPage = () => {
+		window.location.href.indexOf("course") > -1
+			? setCurrentPage("course")
+			: setCurrentPage("home");
+	};
+
+	useEffect(() => {
+		checkPage();
+		console.log(currentPage);
+	}, []);
+
 	return (
 		<div className={styles.container}>
 			<nav className={styles.navBar}>
-				<Link href="/">Home</Link>
-				<Link href="/courses">Courses</Link>
-				<Link href="https://www.linkedin.com/in/christinawebster/">
+				<Link href="/" passHref>
+					<a
+						className={
+							currentPage == "home" ? styles.currentPage : ""
+						}
+					>
+						Home
+					</a>
+				</Link>
+				<Link href="/courses">
+					<a
+						className={
+							currentPage == "course" ? styles.currentPage : ""
+						}
+					>
+						Courses
+					</a>
+				</Link>
+				<Link
+					className={styles.currentPage}
+					href="https://www.linkedin.com/in/christinawebster/"
+				>
 					LinkedIn
 				</Link>
 				<Link href="https://github.com/chrisiwebster">GitHub</Link>

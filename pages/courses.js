@@ -6,6 +6,7 @@ import codecademy from "../public/images/codecademy.svg";
 import birkbeck from "../public/images/birkbeck.svg";
 import linkedin from "../public/images/linkedin.svg";
 import uxwriters from "../public/images/uxwriters.svg";
+import ptc from "../public/images/ptc.svg";
 
 export default function Courses() {
 	return (
@@ -33,6 +34,24 @@ export default function Courses() {
 				<p className={styles.jobPeriod}>
 					October 2020 – September 2021
 				</p>
+			</Card>
+			<Card
+				title="The Publishing Training Centre"
+				logo={ptc}
+				alt="Logo for the Publishing Training Centre"
+			>
+				{" "}
+				<p className={styles.jobTitle}>Essential Copy-Editing</p>
+				<p className={styles.jobPeriod}>June 2018 – July 2019</p>
+			</Card>
+			<Card
+				title="The Publishing Training Centre"
+				logo={ptc}
+				alt="Logo for the Publishing Training Centre"
+			>
+				{" "}
+				<p className={styles.jobTitle}>Basic Proofreading</p>
+				<p className={styles.jobPeriod}>July 2017 – March 2018</p>
 			</Card>
 			<h2>Online learning</h2>
 			<Card title="Codecademy" logo={codecademy} alt="Codecademy logo">

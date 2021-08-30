@@ -1,16 +1,34 @@
 .container {
-	max-width: 85vw;
+	max-width: 90vw;
 	padding: 0 1rem;
 	margin: 3rem auto 6rem;
 }
 
 .navBar {
 	text-align: center;
+	max-width: 90vw;
 }
 
 .navBar a {
-	margin: 0 1em;
+	margin: 0 5px;
+	padding: 1px;
 	letter-spacing: 1px;
+}
+
+.navBar a.currentPage {
+	text-decoration: none;
+}
+
+.navBar a.currentPage::before {
+	content: "–";
+	margin: 0 1px;
+	color: inherit;
+}
+
+.navBar a.currentPage::after {
+	content: "–";
+	margin: 0 1px;
+	color: inherit;
 }
 
 .header {
