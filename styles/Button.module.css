@@ -17,3 +17,8 @@
 .fullBtn:active {
 	box-shadow: none;
 }
+
+.fullBtn:focus {
+	border-radius: 4px;
+	border: 1.5px solid purple;
+}

@@ -22,7 +22,7 @@ export default function Home() {
 				development.
 			</p>
 			<p>
-				Constantly striving on improvement and learning the latest best
+				Constantly striving to improve and learning the latest best
 				practice.
 			</p>
 			<p>
