@@ -34,3 +34,9 @@ p.current {
 .backToHome {
 	margin: 3rem 0 0;
 }
+
+@media screen and (min-width: 1200px) {
+	.container {
+		max-width: 50vw;
+	}
+}
