@@ -1,5 +1,5 @@
 .container {
-	max-width: 36rem;
+	max-width: 85vw;
 	padding: 0 1rem;
 	margin: 3rem auto 6rem;
 }
@@ -24,6 +24,11 @@
 
 .profileImage {
 	border-radius: 50%;
+}
+
+p.current {
+	margin: 0;
+	justify-content: left;
 }
 
 .backToHome {

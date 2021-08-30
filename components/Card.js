@@ -1,15 +1,14 @@
 import styles from "../styles/Card.module.css";
+import Image from "next/image";
 
-export default function Card({ title, children, start, end, jobTitle }) {
+export default function Card({ title, children, logo, alt }) {
 	return (
 		<div className={styles.cardContainer}>
 			<div className={styles.flexWrapper}>
-				<h2>{title}</h2>
+				<h3>{title}</h3>
+				<Image src={logo} alt={alt} />
 			</div>
-			<p>{jobTitle}</p>
-			<p className={styles.jobPeriod}>
-				{start} – {end}
-			</p>
+
 			{children}
 		</div>
 	);

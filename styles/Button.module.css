@@ -1,0 +1,19 @@
+.fullBtn {
+	outline: none;
+	font-size: 1.2em;
+	background-color: antiquewhite;
+	border: none;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+	padding: 1em;
+	width: 100%;
+	transition: 0.3s ease;
+}
+
+.fullBtn:hover {
+	cursor: pointer;
+	transform: scale(1.02);
+}
+
+.fullBtn:active {
+	box-shadow: none;
+}
