@@ -27,7 +27,7 @@ export default function Home() {
 			</p>
 			<p>
 				Read more about{" "}
-				<Link href="/courses">courses I&apos;ve completed</Link>
+				<Link href="/courses">courses I&apos;ve completed</Link>.
 			</p>
 			<hr />
 			<Card
