@@ -76,8 +76,8 @@ export default function Home() {
 				<p>
 					While working on the website at the social care charity, I
 					focused on improving our search rankings for the keyword
-					'safeguarding'. This section on the website saw a lot of
-					visitors, but had a high bounce rate of 68%.{" "}
+					&apos;safeguarding&apos;. This section on the website saw a
+					lot of visitors, but had a high bounce rate of 68%.{" "}
 				</p>
 				<p>
 					Through research and creating a few additional information
