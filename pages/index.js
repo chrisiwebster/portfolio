@@ -11,9 +11,9 @@ import safeguarding from "../public/images/sciesafeguarding.svg";
 import docs from "../public/images/checkoutdocs.svg";
 import dashboard from "../public/images/dashboard.svg";
 
-export default function Home() {
+export default function Home({ home }) {
 	return (
-		<Layout home>
+		<Layout home={home}>
 			<h2>What I do</h2>
 			<p>
 				No matter what my job title is specifically, content has always
