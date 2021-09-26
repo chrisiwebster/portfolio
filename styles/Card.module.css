@@ -10,6 +10,14 @@
 	justify-content: space-between;
 }
 
+.caseStudies {
+	display: inline-block;
+}
+
+.contentWrapper {
+	flex-shrink: 4;
+}
+
 .jobTitle,
 .jobPeriod {
 	margin: 0.5px;

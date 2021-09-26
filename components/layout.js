@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "./layout.module.css";
+import styles from "../styles/layout.module.css";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
@@ -12,18 +12,19 @@ import {
 
 const name = "Chrisi Webster";
 
-export default function Layout({ children, home }) {
-	const [currentPage, setCurrentPage] = useState("home");
+export default function Layout({ children, home, courses, experience }) {
+	const [currentPage, setCurrentPage] = useState("");
 
 	const checkPage = () => {
-		window.location.href.indexOf("course") > -1
-			? setCurrentPage("course")
+		window.location.href.includes("course")
+			? setCurrentPage("courses")
+			: window.location.href.includes("experience")
+			? setCurrentPage("experience")
 			: setCurrentPage("home");
 	};
 
 	useEffect(() => {
 		checkPage();
-		console.log(currentPage);
 	}, []);
 
 	return (
@@ -38,20 +39,25 @@ export default function Layout({ children, home }) {
 						Home
 					</a>
 				</Link>
+				<Link href="/experience">
+					<a
+						className={
+							currentPage == "experience"
+								? styles.currentPage
+								: ""
+						}
+					>
+						Experience
+					</a>
+				</Link>
 				<Link href="/courses">
 					<a
 						className={
-							currentPage == "course" ? styles.currentPage : ""
+							currentPage == "courses" ? styles.currentPage : ""
 						}
 					>
 						Courses
 					</a>
-				</Link>
-				<Link
-					className={styles.currentPage}
-					href="https://www.linkedin.com/in/christinawebster/"
-				>
-					LinkedIn
 				</Link>
 				<Link href="https://github.com/chrisiwebster">GitHub</Link>
 			</nav>
@@ -62,12 +68,20 @@ export default function Layout({ children, home }) {
 					content="Chrisi Webster's portfolio site built using Nextjs."
 				/>
 				<title>
-					{home ? "Chrisi Webster" : "Courses | Chrisi Webster"}
+					{courses
+						? "Courses | Chrisi Webster"
+						: experience
+						? "Professional experience | Chrisi Webster"
+						: "Chrisi Webster"}
 				</title>
 				<meta
 					name="og:title"
 					content={
-						home ? "Chrisi Webster" : "Courses | Chrisi Webster"
+						courses
+							? "Courses | Chrisi Webster"
+							: experience
+							? "Professional experience | Chrisi Webster"
+							: "Chrisi Webster"
 					}
 				/>
 				<meta name="twitter:card" content="summary_large_image" />

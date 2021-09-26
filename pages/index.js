@@ -1,128 +1,108 @@
 //Components
 import Layout from "../components/layout";
 import Card from "../components/Card";
-import Link from "next/link";
-import Button from "../components/Button";
 
 //CSS
-import cardStyles from "../styles/Card.module.css";
-import buttonStyles from "../styles/Button.module.css";
+import styles from "../styles/Card.module.css";
 
 //Images
-import checkout from "../public/images/checkout.svg";
-import scie from "../public/images/scie.svg";
+import metroman from "../public/images/metroman.svg";
+import safeguarding from "../public/images/sciesafeguarding.svg";
+import docs from "../public/images/checkoutdocs.svg";
+import dashboard from "../public/images/dashboard.svg";
 
 export default function Home() {
 	return (
 		<Layout home>
-			<h2>Professional experience</h2>
+			<h2>What I do</h2>
 			<p>
-				Content person first and foremost, with five years of experience
-				making the complex simple. Also interested in front-end
-				development.
+				No matter what my job title is specifically, content has always
+				been the centre of it. Each industry I work in and each new task
+				I find myself completing is something I bring forward to every
+				role I do. The one common theme has always been the people
+				reading the content that is being creating; understanding their
+				need and trying to fulfil it as much as possible.
 			</p>
-			<p>
-				Constantly striving to improve and learning the latest best
-				practice.
-			</p>
-			<p>
-				Read more about{" "}
-				<Link href="/courses">courses I&apos;ve completed</Link>
-			</p>
-			<hr />
 			<Card
-				title="Checkout.com"
-				logo={checkout}
-				alt="Logo for Checkout.com"
+				title="UX Writer"
+				logo={dashboard}
+				alt="Checkout.com's dashboard."
+				className={styles.caseStudies}
 			>
-				<p className={cardStyles.jobTitle}>Technical & UX Writer</p>
-				<p className={cardStyles.jobPeriod}>January 2021 – Present</p>
-				<ul>
-					<li>
-						Implemented a company-wide governance and publication
-						process for the API reference.
-					</li>
-					<li>
-						Create UX copy guiding principles for merchant facing
-						interfaces across the business, including micro-copy,
-						error states and inline dialogue.
-					</li>
-					<li>
-						Review UX copy in Figma, working closely with Product
-						Designers.
-					</li>
-					<li>
-						Document REST APIs with clear, human-centered copy,
-						working with engineers, product leads, and the Customer
-						Success team.
-					</li>
-					<li>
-						Create and update OpenAPI definitions (in YAML) using
-						GitHub and VS Code.
-					</li>
-					<li>
-						Use Heap.io and Google Analytics to measure impact and
-						inform content decisions.
-					</li>
-					<li>
-						Create POCs and write proposals for new technology to be
-						used within the team.
-					</li>
-				</ul>
 				<p>
-					Technical skills: HTML, CSS, Markdown, YAML, Postman,
-					Confluence, Figma
+					There are two key initiatives I am involved in as a UX
+					writer: design alignment across the dashboard and the
+					creation of our design system. One key role I play is
+					researching and defining our guidelines, having created
+					concepts for one product for CTAs, modals and microcopy.{" "}
+				</p>
+				<p>
+					Day to day, I work with all product teams across Checkout to
+					create a consistent user experience on our dashboard.
 				</p>
 			</Card>
 			<Card
-				title="Social Care Institute for Excellence (SCIE)"
-				alt="Logo for SCIE"
-				logo={scie}
+				title="Technical Writer"
+				logo={docs}
+				alt="Checkout.com documentation site."
+				className={styles.caseStudies}
 			>
-				<p className={cardStyles.jobTitle}>Digital Content Developer</p>
-				<p className={cardStyles.jobPeriod}>
-					January 2020 – January 2021
-				</p>
-				<ul>
-					<li>
-						Copy-edited and designed reports, bringing them to life
-						with CSS3, including charts using Chart.js.
-					</li>
-					<li>
-						Support implementation of user feedback on the site to
-						inform on layout and content changes.
-					</li>
-					<li>
-						Increased CTR from 0.8% to 3.3% for the keyword
-						safeguarding in two months, using tools such as Moz,
-						Hotjar and Google Analytics.
-					</li>
-					<li>
-						Designed accessible e-learning modules in Adapt for
-						stakeholders such as the Department of Health and Social
-						Care.
-					</li>
-					<li>
-						Monitored and fixed on-site issues such as keyboard
-						accessibility, inconsistent mobile sizing and
-						font/colour combinations keeping in mind WCAG standards.
-					</li>
-					<li>
-						Proofread and copy-edited material across the business
-						ready to be put onto the website.
-					</li>
-				</ul>
-
 				<p>
-					Technical skills: HTML, CSS, JavaScript, Moz, Google
-					Analytics, SVN version control
+					We are working hard to create a human approach towards
+					technical documentation. The integration builder has been
+					the key project so far; instead of a high-level approach to
+					technical documentation, the integration builder aims to
+					guide and teach those who may be new to coding and APIs.
+				</p>
+				<p>
+					Additionally, I&apos;m working on creating baselines for our
+					analytics on how we can measure success as well as creating
+					POCs for A/B testing and better feedback tools so we can
+					understands the needs of the user. I always look out for
+					ways to improve.{" "}
+				</p>
+				<p>
+					My course at the UX Writers Collective has also taught me
+					the power of bringing UX principles into technical
+					documentation.{" "}
 				</p>
 			</Card>
-			<Button
-				name="View more experience"
-				className={buttonStyles.fullBtn}
-				link="https://www.linkedin.com/in/christinawebster/"
-			/>
+			<Card
+				title="Copywriter"
+				logo={safeguarding}
+				className={styles.caseStudies}
+				alt="Social Care Institute of Excellence safeguarding section of their website."
+			>
+				<p>
+					While working on the website at the social care charity, I
+					focused on improving our search rankings for the keyword
+					'safeguarding'. This section on the website saw a lot of
+					visitors, but had a high bounce rate of 68%.{" "}
+				</p>
+				<p>
+					Through research and creating a few additional information
+					pages, I increased CTR from 0.8% to 3.3% and bounce rate
+					down to 60% in just two months.
+				</p>
+			</Card>
+			<Card
+				title="Content Writer and Editor"
+				logo={metroman}
+				alt="Logo of MetroMan"
+				className={styles.caseStudies}
+			>
+				<p>
+					In my first 6 months, I led focus groups with teams across
+					London to re-shape the internal content system. These
+					colleagues were customer-facing and used the internal
+					content when they needed to find out more about banking
+					procedures, which was vital for providing excellent customer
+					service. By leading these focus groups, we understood what
+					information wasn&apos;t helpful, and what they wished we had
+					more of. It also addressed a large disparity in strucutre;
+					for which, we created a template.{" "}
+				</p>
+			</Card>
 		</Layout>
 	);
 }
