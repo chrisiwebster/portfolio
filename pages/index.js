@@ -31,10 +31,11 @@ export default function Home() {
 			>
 				<p>
 					There are two key initiatives I am involved in as a UX
-					writer: design alignment across the dashboard and the
-					creation of our design system. One key role I play is
-					researching and defining our guidelines, having created
-					concepts for one product for CTAs, modals and microcopy.{" "}
+					writer at Checkout.com: design alignment across the
+					dashboard and the creation of our design system. One key
+					role I play is researching and defining our guidelines,
+					having created concepts for one product for CTAs, modals and
+					microcopy.{" "}
 				</p>
 				<p>
 					Day to day, I work with all product teams across Checkout to
@@ -48,11 +49,12 @@ export default function Home() {
 				className={styles.caseStudies}
 			>
 				<p>
-					We are working hard to create a human approach towards
-					technical documentation. The integration builder has been
-					the key project so far; instead of a high-level approach to
-					technical documentation, the integration builder aims to
-					guide and teach those who may be new to coding and APIs.
+					At Checkout.com, we are working hard to create a human
+					approach towards technical documentation. The integration
+					builder has been the key project so far; instead of a
+					high-level approach to technical documentation, the
+					integration builder aims to guide and teach those who may be
+					new to coding and APIs.
 				</p>
 				<p>
 					Additionally, I&apos;m working on creating baselines for our
@@ -92,9 +94,9 @@ export default function Home() {
 				className={styles.caseStudies}
 			>
 				<p>
-					In my first 6 months, I led focus groups with teams across
-					London to re-shape the internal content system. These
-					colleagues were customer-facing and used the internal
+					In my first 6 months at Metro Bank, I led focus groups with
+					teams across London to re-shape the internal content system.
+					These colleagues were customer-facing and used the internal
 					content when they needed to find out more about banking
 					procedures, which was vital for providing excellent customer
 					service. By leading these focus groups, we understood what
