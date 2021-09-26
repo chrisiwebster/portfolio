@@ -101,7 +101,7 @@ export default function Home() {
 					procedures, which was vital for providing excellent customer
 					service. By leading these focus groups, we understood what
 					information wasn&apos;t helpful, and what they wished we had
-					more of. It also addressed a large disparity in strucutre;
+					more of. It also addressed a large disparity in structure;
 					for which, we created a template.{" "}
 				</p>
 			</Card>
