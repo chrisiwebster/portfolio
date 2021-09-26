@@ -19,9 +19,9 @@ export default function Home() {
 				No matter what my job title is specifically, content has always
 				been the centre of it. Each industry I work in and each new task
 				I find myself completing is something I bring forward to every
-				role I do. The one common theme has always been the people
-				reading the content that is being creating; understanding their
-				need and trying to fulfil it as much as possible.
+				role I have. The one common theme has always been the people
+				reading the content being created; understanding their needs and
+				trying to fulfil them as much as possible.
 			</p>
 			<Card
 				title="UX Writer"
