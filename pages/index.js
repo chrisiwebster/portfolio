@@ -60,8 +60,8 @@ export default function Home() {
 					Additionally, I&apos;m working on creating baselines for our
 					analytics on how we can measure success as well as creating
 					POCs for A/B testing and better feedback tools so we can
-					understands the needs of the user. I always look out for
-					ways to improve.{" "}
+					understand the needs of the user. I always look out for ways
+					to improve.{" "}
 				</p>
 				<p>
 					My course at the UX Writers Collective has also taught me
