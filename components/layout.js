@@ -29,7 +29,7 @@ export default function Layout({ children, home, courses, experience }) {
 
 	return (
 		<div className={styles.container}>
-			<nav className={styles.navBar}>
+			{/* <nav className={styles.navBar}>
 				<Link href="/" passHref>
 					<a
 						className={
@@ -60,7 +60,7 @@ export default function Layout({ children, home, courses, experience }) {
 					</a>
 				</Link>
 				<Link href="https://github.com/chrisiwebster">GitHub</Link>
-			</nav>
+			</nav> */}
 			<Head>
 				<link rel="icon" href="/favicon.ico" />
 				<meta
@@ -97,11 +97,12 @@ export default function Layout({ children, home, courses, experience }) {
 				/>
 				<h1>{name}</h1>
 				<p className={styles.current}>
-					<FontAwesomeIcon icon={faBriefcase} /> Technical & UX Writer
+					<FontAwesomeIcon icon={faBriefcase} />
+					&nbsp;Senior Technical & UX Writer
 				</p>
 				<p className={styles.current}>
-					<FontAwesomeIcon icon={faGraduationCap} /> UX Writing for
-					Technical Writers
+					<FontAwesomeIcon icon={faGraduationCap} />
+					&nbsp;UX Writing Fundamentals
 				</p>
 			</header>
 			<main>{children}</main>

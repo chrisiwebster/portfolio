@@ -14,7 +14,7 @@ import dashboard from "../public/images/dashboard.svg";
 export default function Home() {
 	return (
 		<Layout home>
-			<h2>What I do</h2>
+			{/* <h2>What I do</h2>
 			<p>
 				No matter what my job title is specifically, content has always
 				been the centre of it. Each industry I work in and each new task
@@ -104,7 +104,7 @@ export default function Home() {
 					more of. It also addressed a large disparity in structure;
 					for which, we created a template.{" "}
 				</p>
-			</Card>
+			</Card> */}
 		</Layout>
 	);
 }
